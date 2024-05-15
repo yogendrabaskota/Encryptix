@@ -28,7 +28,7 @@ To run this,
  
 
 ## Output :
-<img src=".../assets/output.png" />
+<img src=".todo_app/assets/output.png" />
 
 ### Feedback
 
