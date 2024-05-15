@@ -1,16 +1,39 @@
-# todo_app
 
-A new Flutter project.
+# ToDo APP:
 
-## Getting Started
+A user-friendly todo app designed to streamline your task management process effortlessly. With this app, you can easily create and organize your todo lists, adding tasks as needed and deleting them once completed, all within a simple and intuitive interface. Whether you're tackling daily errands, work assignments, or personal projects, our todo app is your go-to companion for staying organized and productive. Say goodbye to scattered notes and hello to efficient task management with our innovative todo app.
 
-This project is a starting point for a Flutter application.
+## How to Run:
+To run this, 
+- Install code editors from [Here](https://code.visualstudio.com/download)
+- Install Flutter from [Here](https://docs.flutter.dev/get-started/install) 
+- Install android studio from [Here](https://developer.android.com/studio) 
 
-A few resources to get you started if this is your first Flutter project:
+- Clone above repository in any folder 
+- Start the Android studio emulator ,You can you external emulator as well to run this project. (don't forget to connect the emulator with your code. you can simply do it from 1: VSCode, 2: command palette, 3: flutter:select device, and choose your device/emulator)
+- open that folder in VSCode 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Open command prompt and run following command to check is everything is ok with flutter?
+```https 
+  flutter doctor
+``` 
+- if everything is ok, Run following command to run flutter app
+```http
+  flutter run 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+
+- Now you can see few todo lists, if they car not usable for you, you can delete them and add other todo list as per your requirements.
+
+ 
+
+## Output :
+<img src="./assets/output.png" />
+
+### Feedback
+
+If you have any feedback, please reach out to me at yogendrabaskota18@gmail.com 
+
+
+
+
