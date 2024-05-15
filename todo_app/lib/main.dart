@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/todo_list_screen.dart'; // Import your ToDoListScreen here
+import 'screens/todo_list_screen.dart'; 
 
 void main() {
   runApp(MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('To-DO List'),
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.blue, // Set the background color of the app bar
+          backgroundColor: Colors.blue, 
         ),
         body: ToDoListScreen(),
       ),

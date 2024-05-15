@@ -1,5 +1,3 @@
-// lib/models/task.dart
-
 class Task {
   String title;
   String description;
