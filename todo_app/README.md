@@ -18,7 +18,7 @@ To run this,
   flutter doctor
 ``` 
 - if everything is ok, Run following command to run flutter app
-```http
+```https 
   flutter run 
 
 ```
