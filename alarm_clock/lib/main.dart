@@ -16,6 +16,7 @@ class ClockApp extends StatefulWidget {
 
 class _ClockAppState extends State<ClockApp> {
   String _time = '';
+  TimeOfDay? _alarmTime;
   late AudioCache _audioCache;
 
   @override
@@ -23,7 +24,6 @@ class _ClockAppState extends State<ClockApp> {
     super.initState();
     _audioCache = AudioCache();
     _updateTime();
-    // Update time every second
     Timer.periodic(Duration(seconds: 1), (Timer t) => _updateTime());
   }
 
@@ -35,11 +35,10 @@ class _ClockAppState extends State<ClockApp> {
           '${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}:${now.second.toString().padLeft(2, '0')}';
     });
 
-    // Check if alarm time has reached
-    final alarmTime = tz.TZDateTime.now(nepalTimeZone).add(Duration(seconds: 10)); // Example: Alarm in 10 seconds
-    if (now.hour == alarmTime.hour &&
-        now.minute == alarmTime.minute &&
-        now.second == alarmTime.second) {
+    if (_alarmTime != null &&
+        now.hour == _alarmTime!.hour &&
+        now.minute == _alarmTime!.minute &&
+        now.second == 0) {
       _playAlarmSound();
     }
   }
@@ -54,7 +53,9 @@ class _ClockAppState extends State<ClockApp> {
       initialTime: TimeOfDay.now(),
     );
     if (pickedTime != null) {
-      // Do something with the picked time (like set an alarm)
+      setState(() {
+        _alarmTime = pickedTime;
+      });
       print('Alarm is set for ${pickedTime.hour}:${pickedTime.minute}');
     }
   }
